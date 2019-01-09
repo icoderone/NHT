@@ -6,19 +6,11 @@
   :name: _labs
   :hidden:
 
-  groupfoundation/foundation
-  xray/xray
-  ncc/ncc
-  foundation/foundation
-
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Practice Labs
-  :name: _labs
-  :hidden:
-
   diyfoundation/diyfoundation
+  xray/xray
+
+
+
 
 .. _getting_started:
 
