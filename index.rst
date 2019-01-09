@@ -9,6 +9,8 @@
   groupfoundation/foundation
   xray/xray
   ncc/ncc
+  foundation/foundation
+
 
 .. toctree::
   :maxdepth: 2
