@@ -51,13 +51,13 @@ In **Prism > VM**, click **+ Create VM**
 
 .. image:: images/image004.png
 
-.. image:: images/image005.png
    
 click **+ Add New Disk** , choose **Clone from Image Service** and image ‘AutoDC’，click **Add**.
+.. image:: images/image005.png
 
-.. image:: images/image006.png 
 
 Click **+Add new NIC** and choose **Rx-Automation-Network** vlan.0, click **Add**.
+.. image:: images/image006.png 
 
 .. image:: images/image007.png
  
