@@ -30,7 +30,7 @@ Click gear icon on top right to access configuration page and navigate to Networ
 
  then click **save**
 
-.. figure:: images/files_deploy_001.png
+.. image:: images/image001.png
   
 Create AD VM for AD/LDAP connectivity
 +++++++++++++++++++++++++++++++++++++++++
@@ -41,7 +41,7 @@ Open a terminal and SSH to CVM, type ‘ssh nutanix@10.21.xx.31’ , type ‘ ye
 
 *acli image.create AutoDC container=Images image_type=kDiskImage source_url=http://10.21.250.221/images/auto_dc.qcow2*
 
-.. figure:: images/files_deploy_002.png
+.. image:: images/image002.png
   
 Now we are going to create an AD VM from image AutoDC. AD is a pre-requirement of File Service.
 
