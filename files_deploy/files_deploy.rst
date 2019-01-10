@@ -31,6 +31,7 @@ Click gear icon on top right to access configuration page and navigate to Networ
  then click **save**
 
 .. image:: images/image001.png
+   :scale: 100 %
   
 Create AD VM for AD/LDAP connectivity
 +++++++++++++++++++++++++++++++++++++++++
@@ -47,20 +48,21 @@ Now we are going to create an AD VM from image AutoDC. AD is a pre-requirement o
 
 In **Prism > VM**, click **+ Create VM**
 
-.. figure:: images/files_deploy_004.png
-.. figure:: images/files_deploy_005.png
+.. image:: images/image004.png
+
+.. image:: images/image005.png
    
 click **+ Add New Disk** , choose **Clone from Image Service** and image ‘AutoDC’，click **Add**.
 
-.. figure:: images/files_deploy_006.png  
+.. image:: images/image006.png 
 
 Click **+Add new NIC** and choose **Rx-Automation-Network** vlan.0, click **Add**.
 
-.. figure:: images/files_deploy_007.png
+.. image:: images/image007.png
  
 After AD VM is created successfully, power on AD VM, then launch console to see domain name, IP Address and credentials of AD. This information will be used later.
 
-.. figure:: images/files_deploy_008.png
+.. image:: images/image008.png
 
 Deploy Acropolis File Services
 ++++++++++++++++++++++++++++++
@@ -70,15 +72,15 @@ In **Prism > File Server**, click **+ File Server**.
 Firstly, download Files 3.1.0.1 package, click Continue to install File Services Software on POCxx
 Secondly, add Data Services IP as 10.21.XX.38. Click Continue.
 
-.. figure:: images/files_deploy_009.png
+.. image:: images/image009.png
 
 Fill out the following fields and click **Next**:
 
   - **Name** - *intials*-Files (e.g. JNC-Files)
   - **Domain** - POCLAB.local
   - **File Server Size** - 1 TiB
-
-.. figure:: images/files_deploy_010.png
+  
+.. image:: images/image010.png
 
 Select the **Rx-Automation-Network-Unmanaged** VLAN for the Client Network. Specify your cluster's **AutoDC** VM IP as the **DNS Resolver IP**. Click **Next**.
 
@@ -94,9 +96,9 @@ Fill out the following fields and click **Next**:
   - **DNS** – 10.21.xx.yy (AD VM IP address)
   - **NTP** – 10.21.253.10
 
-.. figure:: images/files_deploy_011.png
+.. image:: images/image011.png
 
-.. figure:: images/files_deploy_012.png
+.. image:: images/image012.png
 
 .. note::
 
@@ -110,9 +112,9 @@ Fill out the following fields and click **Next**:
   - **Gateway** – 10.21.xx.129
   - **IP** – **from** 10.21.xx.132 **to** 10.21.xx.135 (click **save** on the right)
 
-.. figure:: images/files_deploy_013.png
+.. image:: images/image013.png
 
-.. figure:: images/files_deploy_014.png
+.. image:: images/image014.png
 
 .. note::
   
@@ -128,18 +130,18 @@ Fill out the following fields and click **Next**:
   - Select **Use NFS Protocol**
   - **User Management and Authentication** - Unmanaged
 
-.. figure:: images/files_deploy_015.png
+.. image:: images/image015.png
 
 Fill out the following fields and click **Create**:
 
   - Select **Create a Protection Domain and a default schedule (highly recommended)**
   - **PROTECTION DOMAIN NAME** - NTNX-POCxx-Files
 
-.. figure:: images/files_deploy_016.png
+.. image:: images/image016.png
 
 Monitor deployment progress in **Prism > Tasks**.
 
-.. figure:: images/files_deploy_017.png
+.. image:: images/image017.png
 
 .. note::
 
@@ -147,7 +149,7 @@ Monitor deployment progress in **Prism > Tasks**.
 
 Upon completion, select the **AFS** server and click **Protect**. Click **+Add schedule** to make a snapshot schedule you plan.
 
-.. figure:: images/files_deploy_018.png
+.. image:: images/image018.png
 
 Observe the default Self Service Restore schedules, this feature controls the snapshot schedule for Windows' Previous Versions functionality. Supporting Previous Versions allows end users to roll back changes to files without engaging storage or backup administrators. Note these local snapshots do not protect the file server cluster from local failures and that replication of the entire file server cluster can be performed to remote Nutanix clusters. Click **Close**.
 
@@ -160,26 +162,26 @@ Fill out the following fields and click Next:
  - **Name** – home
  - **File Server**- POCxx-Files
  - **Select Protocol** - SMB
-
-.. figure:: images/files_deploy_019.png 
+ 
+.. image:: images/image019.png
 
 Select **Enable Access Based Enumeration (ABE)**, **Self Service Restore** and **Advanced Settings**. Select **Home directory and User Profiles** and click **next**
 
-.. figure:: images/files_deploy_020.png
+.. image:: images/image020.png
  
 Review Summary tab and click **create**
  
-.. figure:: images/files_deploy_021.png
+.. image:: images/image021.png
 
 Login to https://citrixready.nutanix.com using your supplied credentials
 Select "Customers, Partners & Bootcamps" to access your virtual desktop, open file browser and type ‘\\10.21.xx.100’ (or any other IP of FSVM)
 Login by administrator@poclab.local credential 
 
-.. figure:: images/files_deploy_022.png
+.. image:: images/image022.png
  
 You can see home share after login successfully.
 
-.. figure:: images/files_deploy_023.png
+.. image:: images/image023.png
  
 
 Takeaways
