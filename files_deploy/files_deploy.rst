@@ -30,7 +30,8 @@ Click gear icon on top right to access configuration page and navigate to Networ
 
  then click **save**
 
-.. image:: images/image001.png:scale: 50 %
+.. image:: images/image001.png
+   :scale: 50 %
   
 Create AD VM for AD/LDAP connectivity
 +++++++++++++++++++++++++++++++++++++++++
