@@ -2,12 +2,14 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: NHT Group Labs
+  :caption: NHT Labs
   :name: _labs
   :hidden:
 
   diyfoundation/diyfoundation
+  
   xray/xray
+  
   files_deploy/files_deploy
 
 
@@ -59,16 +61,3 @@ The default password is **welcome123**. You will be prompted to change your pass
 
 .. image:: images/1.png
 
-If the default password fails, you can reset your **NUTANIXDC.local** account password by logging into https://rx.corp.nutanix.com using Okta credentials and clicking **Reset NutanixDC.Local Password** in the toolbar.
-
-.. image:: images/2.png
-
-If logon still fails (and you are an SE), contact hostedpoc@nutanix.com to request a **NUTANIXDC.local** account.
-
-Once logged in to https://citrixready.nutanix.com, select **Desktops** from the toolbar and then launch the **EMPLOYEES** desktop.
-
-.. image:: images/3.png
-
-If the Citrix client isn't immediately launched, your browser may have downloaded a **.ica** file without opening it. Open the **.ica** file to launch the Citrix client.
-
-If you receive a certificate error attempting to connect to your Citrix desktop, download and install the `DigiCert SHA2 Secure Server CA <https://dl.cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt>`_ certificate. Restart your browser and attempt to launch your Citrix desktop again.
