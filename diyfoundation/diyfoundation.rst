@@ -55,6 +55,7 @@ Remaining in SSH client, access Node-D CVM and execute following commands
  ncli cluster add-to-name-servers servers=10.21.253.10
  ncli cluster set-external-ip-address external-ip-address=10.21.xx.40
 
+.. note::
 
   The above command will create a "cluster" from a single node using RF1, offering no redundancy to recover from hardware failure. This configuration is being used for non-production, instructional purposes and should **NEVER** be used for a customer deployment.
 
