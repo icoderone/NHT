@@ -1,4 +1,4 @@
-.. _diyfoundation_lab:
+
 
 ---------------------
 Foundation a cluster
@@ -41,8 +41,8 @@ Execute the following commands to power off any running VMs on the cluster, stop
   cluster destroy     # Enter 'Y' when prompted to proceed
 
 
-Create A Single-Node Cluster on Node-D 
-++++++++++++++++++++++++++++++++++++++
+Create 1-Node Cluster on Node D
++++++++++++++++++++++++++++++++
 
 Remaining in SSH client, access Node-D CVM and execute following commands
 
@@ -61,20 +61,17 @@ Remaining in SSH client, access Node-D CVM and execute following commands
 
   After the "cluster" is created, Prism will reflect Critical Health status due to lack of redundancy.
 
-Install Foundation VM on Node-D Cluster
-........................................
+Install Foundation VM on Node D
++++++++++++++++++++++++++++++++
 
 Open \https://*<NODE A CVM IP>*:9440 in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - Nutanix/4u
 
-Provide a new **admin** password **techX2019！**. Log in as **admin** using your new password.
+Provide a new **admin** password **techX2019！**. 
 
 Accept the EULA and Pulse prompts.
-
-Installing Foundation on Node-D
-................................
 
 In **Prism > Storage > Storage Pool**, select default storage pool and click update, then rename it to *SP01*
 
@@ -134,8 +131,8 @@ Fill out the following fields and click **Save**:
 
 .. figure:: images/image005.png
 
-Foundation Nodes ABC
-+++++++++++++++++++++
+Setting Foundation VM
++++++++++++++++++++++++++++
 
 Select your **Foundation** VM and click **Power on**.
 
@@ -184,7 +181,7 @@ Select **Save & Quit** and press **Return**.
 
 .. figure:: images/image013.png
 
-Running Foundation
+Foundation ABC node
 ++++++++++++++++++
 
 From within the Foundation VM console, launch **Nutanix Foundation** from the desktop.
