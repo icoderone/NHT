@@ -188,4 +188,4 @@ You can see home share after login successfully.
 .. image:: images/image023.png
  
 
-
+You can also use domain name (\\POC04-Files.POClab.local) to access if you direct DNS of your desktop to AD VM IP(10.21.xx.yy).
