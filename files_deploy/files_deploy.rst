@@ -80,9 +80,9 @@ Secondly, add Data Services IP as 10.21.XX.38. Click Continue.
 
 Fill out the following fields and click **Next**:
 
- - **Name** - *intials*-Files (e.g. POCxx-Files)
- - **Domain** - POCLAB.local
- - **File Server Size** - 1 TiB
+- **Name** - *intials*-Files (e.g. POCxx-Files)
+- **Domain** - POCLAB.local
+- **File Server Size** - 1 TiB
   
 .. image:: images/image010.png
 
@@ -94,11 +94,11 @@ Select the **Rx-Automation-Network-Unmanaged** VLAN for the Client Network. Spec
 
 Fill out the following fields and click **Next**:
 
- - **Subnet Mask** – 255.255.255.128
- - **Gateway** – 10.21.xx.1
- - **IP** – **from** 10.21.xx.100 **to** 10.21.xx.102 (click **save** on the right)
- - **DNS** – 10.21.xx.yy (AD VM IP address)
- - **NTP** – 10.21.253.10
+- **Subnet Mask** – 255.255.255.128
+- **Gateway** – 10.21.xx.1
+- **IP** – **from** 10.21.xx.100 **to** 10.21.xx.102 (click **save** on the right)
+- **DNS** – 10.21.xx.yy (AD VM IP address)
+- **NTP** – 10.21.253.10
 
 .. image:: images/image011.png
 
@@ -112,9 +112,9 @@ Select the **Secondary - Managed** VLAN for the Storage Network. Click **Next**.
 
 Fill out the following fields and click **Next**:
 
- - **Subnet Mask** – 255.255.255.128
- - **Gateway** – 10.21.xx.129
- - **IP** – **from** 10.21.xx.132 **to** 10.21.xx.135 (click **save** on the right)
+- **Subnet Mask** – 255.255.255.128
+- **Gateway** – 10.21.xx.129
+- **IP** – **from** 10.21.xx.132 **to** 10.21.xx.135 (click **save** on the right)
 
 .. image:: images/image013.png
 
@@ -127,19 +127,19 @@ Fill out the following fields and click **Next**:
 
 Fill out the following fields and click **Next**:
 
- - Select **Use SMB Protocol**
- - **Username** - Administrator@POCLAB.local
- - **Password** - nutanix/4u
- - Select **Make this user a File Server admin**
- - Select **Use NFS Protocol**
- - **User Management and Authentication** - Unmanaged
+- Select **Use SMB Protocol**
+- **Username** - Administrator@POCLAB.local
+- **Password** - nutanix/4u
+- Select **Make this user a File Server admin**
+- Select **Use NFS Protocol**
+- **User Management and Authentication** - Unmanaged
 
 .. image:: images/image015.png
 
 Fill out the following fields and click **Create**:
 
- - Select **Create a Protection Domain and a default schedule (highly recommended)**
- - **PROTECTION DOMAIN NAME** - NTNX-POCxx-Files
+- Select **Create a Protection Domain and a default schedule (highly recommended)**
+- **PROTECTION DOMAIN NAME** - NTNX-POCxx-Files
 
 .. image:: images/image016.png
 
@@ -163,9 +163,9 @@ Configuring SMB Home Share
 In **Prism** > **File Server**, click **+Share/Export**. 
 
 Fill out the following fields and click Next:
- - **Name** – home
- - **File Server**- POCxx-Files
- - **Select Protocol** - SMB
+- **Name** – home
+- **File Server**- POCxx-Files
+- **Select Protocol** - SMB
  
 .. image:: images/image019.png
 
