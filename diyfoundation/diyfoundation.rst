@@ -15,7 +15,7 @@ Overview
 Foundation is used to automate the installation of the hypervisor and Controller VM on one or more nodes. 
 In this exercise you will practice imaging a physical cluster with Foundation. In order to keep the lab self-contained, you will create a single node "cluster" on which you will deploy your Foundation VM. That Foundation instance will be used to image and create a cluster from the remaining 3 nodes in the Block.
 
-Staging Your Environment
+DIY Your Environment
 ++++++++++++++++++++++++
 
 
@@ -41,8 +41,8 @@ Execute the following commands to power off any running VMs on the cluster, stop
   cluster destroy     # Enter 'Y' when prompted to proceed
 
 
-Create 1-Node Cluster on Node D
-+++++++++++++++++++++++++++++++
+Create Node D Cluster 
++++++++++++++++++++++
 
 Remaining in SSH client, access Node-D CVM and execute following commands
 
@@ -61,8 +61,8 @@ Remaining in SSH client, access Node-D CVM and execute following commands
 
   After the "cluster" is created, Prism will reflect Critical Health status due to lack of redundancy.
 
-Install Foundation VM on Node D
-+++++++++++++++++++++++++++++++
+Install Foundation VM 
+++++++++++++++++++++++
 
 Open \https://*<NODE A CVM IP>*:9440 in your browser and log in with the following credentials:
 
@@ -136,8 +136,8 @@ Fill out the following fields and click **Save**:
 .. image:: images/image005.png
    :scale: 50 %
    
-Setting Foundation VM
-+++++++++++++++++++++++++++
+config Foundation VM
++++++++++++++++++++++
 
 Select your **Foundation** VM and click **Power on**.
 
@@ -194,8 +194,8 @@ Select **Save & Quit** and press **Return**.
 .. image:: images/image013.png
    :scale: 50 %
    
-Foundation ABC node
-++++++++++++++++++
+Running Foundation to create ABC cluster
+++++++++++++++++++++++++++++++++++++++++
 
 From within the Foundation VM console, launch **Nutanix Foundation** from the desktop.
 
