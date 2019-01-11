@@ -1,8 +1,8 @@
 .. _files_deploy:
 
-------------------------
-ACROPOLIS FILE SERVICES
-------------------------
+-------------
+File Services
+-------------
 
 Overview
 ++++++++
