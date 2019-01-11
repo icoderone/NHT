@@ -66,13 +66,13 @@ After AD VM is created successfully, power on AD VM, then launch console to see 
 
 .. image:: images/image007.png
 
+.. image:: images/image008.png
 
 Deploy Acropolis File Services
 ++++++++++++++++++++++++++++++
 
 In **Prism > File Server**, click **+ File Server**.
 
-.. image:: images/image008.png
 
 Firstly, download Files 3.1.0.1 package, click Continue to install File Services Software on POCxx
 Secondly, add Data Services IP as 10.21.XX.38. Click Continue.
@@ -81,7 +81,7 @@ Secondly, add Data Services IP as 10.21.XX.38. Click Continue.
 
 Fill out the following fields and click **Next**:
 
-  - **Name** - *intials*-Files (e.g. JNC-Files)
+  - **Name** - *intials*-Files (e.g. POCxx-Files)
   - **Domain** - POCLAB.local
   - **File Server Size** - 1 TiB
   
