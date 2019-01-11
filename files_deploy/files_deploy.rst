@@ -18,7 +18,7 @@ In following steps, you may replace ‘xx’ with your assigned cluster ID
 Networks preparation
 +++++++++++++++++++++
 
-Launch a web browser and log into POC0xx-ABC PRISM with IP 10.21.xx.37, User: admin, Password: techX2019!
+Launch a web browser and log into POCxx-ABC PRISM with IP 10.21.xx.37, User: admin, Password: techX2019!
 
 Firstly, we need to make sure a primary and a secondary network are created for File Service. 
 
