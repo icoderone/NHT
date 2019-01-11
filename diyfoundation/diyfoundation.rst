@@ -1,4 +1,4 @@
-
+.. _diyfoundation:
 
 ---------------------
 Foundation a cluster
