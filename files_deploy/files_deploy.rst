@@ -32,7 +32,6 @@ then click **save**
 
 .. image:: images/image001.png
 
-.. image:: images/3.png
   
 Create AD VM for AD/LDAP connectivity
 +++++++++++++++++++++++++++++++++++++++++
