@@ -191,6 +191,6 @@ You can see home share after login successfully.
 Takeaways
 +++++++++
 
- - Nutanix provides file services suitable for storing user profiles and application data via SMB or NFSv4.
- - AFS is capable of scaling up and out to meet workload requirements.
- - AFS has data protection built-in by leveraging native snapshots and replication. AFS 3.0 also feature integration with 3rd party backup solutions.
+- Nutanix provides file services suitable for storing user profiles and application data via SMB or NFSv4.
+- AFS is capable of scaling up and out to meet workload requirements.
+- AFS has data protection built-in by leveraging native snapshots and replication. AFS 3.0 also feature integration with 3rd party backup solutions.
