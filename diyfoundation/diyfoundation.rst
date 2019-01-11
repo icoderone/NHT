@@ -74,7 +74,7 @@ Provide a new **admin** password **techX2019！**. Log in as **admin** using you
 Accept the EULA and Pulse prompts.
 
 Installing Foundation on Node-D
-+++++++++++++++++++++++++++++++++
+................................
 
 In **Prism > Storage > Storage Pool**, select default storage pool and click update, then rename it to *SP01*
 
