@@ -53,22 +53,26 @@ In **Prism > VM**, click **+ Create VM**
 
    
 click **+ Add New Disk** , choose **Clone from Image Service** and image ‘AutoDC’，click **Add**.
+
 .. image:: images/image005.png
 
 
 Click **+Add new NIC** and choose **Rx-Automation-Network** vlan.0, click **Add**.
+
 .. image:: images/image006.png 
 
-.. image:: images/image007.png
  
 After AD VM is created successfully, power on AD VM, then launch console to see domain name, IP Address and credentials of AD. This information will be used later.
 
-.. image:: images/image008.png
+.. image:: images/image007.png
+
 
 Deploy Acropolis File Services
 ++++++++++++++++++++++++++++++
 
 In **Prism > File Server**, click **+ File Server**.
+
+.. image:: images/image008.png
 
 Firstly, download Files 3.1.0.1 package, click Continue to install File Services Software on POCxx
 Secondly, add Data Services IP as 10.21.XX.38. Click Continue.
