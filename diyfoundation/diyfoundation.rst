@@ -79,7 +79,7 @@ In **Prism > Storage > Storage Pool**, select default storage pool and click upd
 
 Click **+ Storage Container** to create a new container named *Images*
 
-.. figure:: images/1.png
+.. figure:: images/image001.png
 
 Go to configuration page and navigate to **Image Configuration**, click **+Upload Image**
 Fill out the following fields and click **Save**:
@@ -90,7 +90,7 @@ Fill out the following fields and click **Save**:
 - Select **From URL**
 - **Image Source** - http://download.nutanix.com/foundation/foundation-4.3/Foundation_VM-4.3-disk-0.qcow2
 
-.. figure:: images/2.png
+.. figure:: images/image002.png
 
 .. note::
 
@@ -127,11 +127,11 @@ Fill out the following fields and click **Save**:
   - **VLAN Name** - Primary
   - Select **Add**
 
-.. figure:: images/3.png
+.. figure:: images/image003.png
 
-.. figure:: images/4.png
+.. figure:: images/image004.png
 
-.. figure:: images/5.png
+.. figure:: images/image005.png
 
 Foundation Nodes ABC
 +++++++++++++++++++++
@@ -142,23 +142,23 @@ Once the VM has started, click **Launch Console**.
 
 Once the VM has finished booting, click **nutanix**. Enter the default password *nutanix/4u* click **Log In**.
 
-.. figure:: images/6.png
+.. figure:: images/image006.png
 
 Click the time on top right, change the time zone of the Foundation VM to local time zone with User: root, Password: nutanix/4u
 
-.. figure:: images/7.png
+.. figure:: images/image007.png
 
-.. figure:: images/8.png
+.. figure:: images/image008.png
 
 Double-click **set_foundation_ip_address > Run in Terminal**.
 
 Select **Device configuration** and press **Return**.
 
-.. figure:: images/9.png
+.. figure:: images/image009.png
 
 Select **eth0** and press **Return**.
 
-.. figure:: images/10.png
+.. figure:: images/image010.png
 
 .. note:: Use the arrow keys to navigate between menu items.
 
@@ -169,7 +169,7 @@ Replacing the octet(s) that correspond to your HPOC network, fill out the follow
 - **Netmask** - 255.255.255.128
 - **Gateway** - 10.21.xx.1
 
-.. figure:: images/11.png
+.. figure:: images/image011.png
 
 .. note::
 
@@ -177,11 +177,11 @@ Replacing the octet(s) that correspond to your HPOC network, fill out the follow
 
 Select **Save** and press **Return**.
 
-.. figure:: images/12.png
+.. figure:: images/image012.png
 
 Select **Save & Quit** and press **Return**.
 
-.. figure:: images/13.png
+.. figure:: images/image013.png
 
 Running Foundation
 ++++++++++++++++++
@@ -201,7 +201,7 @@ On the **Start** page, click **Next**.
 - **Netmask of Every IPMI** - 255.255.255.128
 - **Gateway of Every Hypervisor and CVM** - 10.21.xx.1
 
-.. figure:: images/14.png
+.. figure:: images/image014.png
 
 Click **Click here** to manually specify the MAC address of your assigned node.
 
@@ -228,7 +228,7 @@ Selecting NODE, click **Range Autofill** in drop-down list of **Tools**, replaci
 - **CVM IP** - 10.21.xx.29
 - **Node A Hypervisor Hostname** – POCxx-1
 
-.. figure:: images/15.png
+.. figure:: images/image015.png
 
 Replacing the octet(s) that correspond to your HPOC network, fill out the following fields and select **Next**:
 
@@ -250,13 +250,13 @@ Fill out the following fields and click **Next**:
 
   *Refer to AOS Release Notes > Controller VM Memory Configurations for guidance on CVM Memory Allocation.*
 
-.. figure:: images/16.png
+.. figure:: images/image016.png
 
-.. figure:: images/17.png
+.. figure:: images/image017.png
 
 By default, Foundation does not have any AOS or hypervisor images. To upload AOS or hypervisor files, click **Manage AOS Files**.
 
-.. figure:: images/18.png
+.. figure:: images/image018.png
 
 Download your desired AOS package from the `Nutanix Portal <https://portal.nutanix.com/#/page/releases/nosDetails>`_.
 
@@ -268,13 +268,13 @@ After the upload completes, click **Close**. Click **Next**.
 
   If downloading the AOS package within the Foundation VM, the .tar.gz package can also be moved to ~/foundation/nos rather than uploaded to Foundation through the web UI. After moving the package into the proper directory, click **Manage AOS Files > Refresh**.
 
-.. figure:: images/19.png
+.. figure:: images/image019.png
 
 Fill out the following fields and click **Next**:
 
 - **Select a hypervisor installer** - AHV, AHV installer bundled inside the AOS installer
 
-.. figure:: images/20.png
+.. figure:: images/image020.png
 
 .. note::
 
@@ -282,15 +282,15 @@ Fill out the following fields and click **Next**:
 
 Select **Fill with Nutanix defaults** from the **Tools** dropdown menu to populate the credentials used to access IPMI on each node.
 
-.. figure:: images/21.png
+.. figure:: images/image021.png
 
 Click **Start > Proceed** and continue to monitor Foundation progress through the Foundation web console. Click the **Log** link to view the realtime log output from your node.
 
-.. figure:: images/22.png
+.. figure:: images/image022.png
 
 When all CVMs are ready, Foundation initiates the cluster creation process.
 
-.. figure:: images/23.png
+.. figure:: images/image023.png
 
 Open \https://*<Cluster Virtual IP>*:9440 in your browser and log in with the following credentials:
 
@@ -298,4 +298,4 @@ Open \https://*<Cluster Virtual IP>*:9440 in your browser and log in with the fo
 - **Password** - Nutanix/4u
 - **Change the Password** - techX2019!
 
-.. figure:: images/24.png
+.. figure:: images/image024.png
