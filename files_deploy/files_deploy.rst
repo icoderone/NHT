@@ -26,7 +26,7 @@ Click gear icon on top right to access configuration page and navigate to Networ
 
 - create ‘Rx-Automation-Network’ with VLAN 0
  
-- create vlan *z* (*z* =xx1; eg. xx=4, *z* =41) named Secondary 
+- create vlan *z* (*z* should be replaced by xx1; eg. if your cluster ID xx is 4, then *z* is 41) named Secondary 
 
 then click **save**
 
