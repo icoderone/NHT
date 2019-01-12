@@ -96,7 +96,6 @@ Click **+ Storage Container** to create a new container named *Images*
 
 .. image:: images/image001.jpeg
  
-
 Go to configuration page and navigate to **Image Configuration**, click **+Upload Image**
 Fill out the following fields and click **Save**:
 
@@ -107,7 +106,6 @@ Fill out the following fields and click **Save**:
 - **Image Source** - http://download.nutanix.com/foundation/foundation-4.3/Foundation_VM-4.3-disk-0.qcow2
 
 .. image:: images/image002.jpeg
-   :scale: 60%
    
 .. note::
 
