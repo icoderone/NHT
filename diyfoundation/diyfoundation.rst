@@ -30,7 +30,7 @@ Table 1. IPs for Nodes:
 +---------+---------------+----------------+---------------+
 
 * IPMI User:ADMIN, Password:ADMIN
-* In following steps, you may replace ‘xx’ with your assigned cluster ID
+* In following steps, you may replace xx with your assigned cluster ID
 
 
 
@@ -46,7 +46,7 @@ A Hosted POC reservation provides a fully imaged cluster consisting of 4 nodes. 
 - Use Foundation to image Nodes A, B, and C and create a 3 node cluster
 
 
-Using an SSH client, connect to the **Node A CVM IP** (e.g. 10.21.\ *xx*\ .29) in your assigned block using the following credentials:
+Using an SSH client, connect to the **Node A CVM IP** (e.g. 10.21.xx.29) in your assigned block using the following credentials:
 
 - **Username** - nutanix
 - **Password** - *techX2019!*
