@@ -113,6 +113,7 @@ Fill out the following fields and click **Save**:
   At the time of writing, Foundation 4.3 is the latest available version. The URL for the latest Foundation VM QCOW2 image can be downloaded from the `Nutanix Portal <https://portal.nutanix.com/#/page/foundation>`_.
 
   **Unless otherwise directed by support, always use the latest version of Foundation.**
+  
 
 After the image creation process completes, browse to **Prism > VM > Table** and click **Network Config**.
 
