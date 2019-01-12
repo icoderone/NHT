@@ -91,7 +91,7 @@ Open \https://*<Node D CVM IP>*:9440 (\https://10.21.xx.32:9440) in your browser
 
 Accept the EULA and Pulse prompts.
 
-In **Prism > Storage > Storage Pool**, select default storage pool and click update, then rename it to *SP01*
+In **Prism > Storage > Table > Storage Pool**, select default storage pool and click update, then rename it to *SP01*
 
 Click **+ Storage Container** to create a new container named *Images*
 
