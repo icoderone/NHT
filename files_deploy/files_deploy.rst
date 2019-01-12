@@ -13,7 +13,7 @@ Overview
 
 In this exercise you will use Prism to deploy Files, a native, distributed file server solution for Nutanix clusters. You will configure SMB share, and familiarize yourself with new features of the AFS offering.
 
-In following steps, you may replace ‘xx’ with your assigned cluster ID
+In following steps, you may replace *xx* with your assigned cluster ID
 
 Networks preparation
 +++++++++++++++++++++
@@ -26,7 +26,7 @@ Click gear icon on top right to access configuration page and navigate to Networ
 
 - create ‘Rx-Automation-Network’ with VLAN 0
  
-- create vlan x (see Reservation Information) named Secondary 
+- create vlan *z* (*z*=xx1; eg. xx=4, *z*=41) named Secondary 
 
 then click **save**
 
@@ -97,7 +97,7 @@ Fill out the following fields and click **Next**:
 - **Subnet Mask** – 255.255.255.128
 - **Gateway** – 10.21.xx.1
 - **IP** – **from** 10.21.xx.100 **to** 10.21.xx.102 (click **save** on the right)
-- **DNS** – 10.21.xx.yy (AD VM IP address)
+- **DNS** – 10.21.xx.yy (check AD VM IP address)
 - **NTP** – 10.21.253.10
 
 .. image:: images/image011.png
