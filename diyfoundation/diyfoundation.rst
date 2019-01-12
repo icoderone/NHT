@@ -49,7 +49,7 @@ A Hosted POC reservation provides a fully imaged cluster consisting of 4 nodes. 
 Using an SSH client, connect to the **Node A CVM IP** (e.g. 10.21.\ *xx*\ .29) in your assigned block using the following credentials:
 
 - **Username** - nutanix
-- **Password** - *<HPOC Cluster Password>*
+- **Password** - *techX2019!*
 
 Execute the following commands to power off any running VMs on the cluster, stop cluster services, and destroy the existing cluster:
 
