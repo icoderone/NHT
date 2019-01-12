@@ -89,8 +89,6 @@ Open \https://*<Node D CVM IP>*:9440 (\https://10.21.xx.32:9440) in your browser
 - **Username** - admin
 - **Password** - techX2019!
 
-Provide a new **admin** password **techX2019！**. 
-
 Accept the EULA and Pulse prompts.
 
 In **Prism > Storage > Storage Pool**, select default storage pool and click update, then rename it to *SP01*
