@@ -94,7 +94,7 @@ In **Prism > Storage > Storage Pool**, select default storage pool and click upd
 
 Click **+ Storage Container** to create a new container named *Images*
 
-.. image:: images/image001.png
+.. image:: images/image001.jpeg
    :scale: 30%
 
 Go to configuration page and navigate to **Image Configuration**, click **+Upload Image**
