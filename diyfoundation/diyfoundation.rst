@@ -153,7 +153,7 @@ Fill out the following fields and click **Save**:
 .. image:: images/image005.png
    :scale: 30%
    
-config Foundation VM
+Config Foundation VM
 +++++++++++++++++++++
 
 Select your **Foundation** VM and click **Power on**.
