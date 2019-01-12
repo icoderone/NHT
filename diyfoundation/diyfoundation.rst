@@ -84,7 +84,7 @@ Remaining in SSH client, access Node-D CVM and execute following commands
 Install Foundation VM 
 ++++++++++++++++++++++
 
-Open \https://*<NODE A CVM IP>*:9440 in your browser and log in with the following credentials:
+Open \https://*<Node D cvm IP:10.21.xx.32>*:9440 in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - techX2019!
