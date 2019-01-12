@@ -95,7 +95,6 @@ In **Prism > Storage > Storage Pool**, select default storage pool and click upd
 Click **+ Storage Container** to create a new container named *Images*
 
 .. image:: images/image001.png
-   :scale: 50 %
 
 Go to configuration page and navigate to **Image Configuration**, click **+Upload Image**
 Fill out the following fields and click **Save**:
@@ -107,7 +106,6 @@ Fill out the following fields and click **Save**:
 - **Image Source** - http://download.nutanix.com/foundation/foundation-4.3/Foundation_VM-4.3-disk-0.qcow2
 
 .. image:: images/image002.png
-   :scale: 50 %
    
 .. note::
 
@@ -145,12 +143,13 @@ Fill out the following fields and click **Save**:
   - Select **Add**
 
 .. image:: images/image003.png
-   
+
+
 .. image:: images/image004.png
-   
+
+
 .. image:: images/image005.png
-  
-   
+     
 config Foundation VM
 +++++++++++++++++++++
 
@@ -159,9 +158,7 @@ Select your **Foundation** VM and click **Power on**.
 Once the VM has started, click **Launch Console**.
 
 Once the VM has finished booting, click **nutanix**. Enter the default password *nutanix/4u* click **Log In**.
-
 .. image:: images/image006.png
-   
 Click the time on top right, change the time zone of the Foundation VM to local time zone with User: root, Password: nutanix/4u
 
 .. image:: images/image007.png
