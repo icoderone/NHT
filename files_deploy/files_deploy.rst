@@ -13,7 +13,7 @@ Overview
 
 In this exercise you will use Prism to deploy Files, a native, distributed file server solution for Nutanix clusters. You will configure SMB share, and familiarize yourself with new features of the AFS offering.
 
-In following steps, you may replace *xx* with your assigned cluster ID
+In following steps, you may replace xx with your assigned cluster ID
 
 Networks preparation
 +++++++++++++++++++++
