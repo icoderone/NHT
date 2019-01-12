@@ -15,6 +15,23 @@ Overview
 Foundation is used to automate the installation of the hypervisor and Controller VM on one or more nodes. 
 In this exercise you will practice imaging a physical cluster with Foundation. In order to keep the lab self-contained, you will create a single node "cluster" on which you will deploy your Foundation VM. That Foundation instance will be used to image and create a cluster from the remaining 3 nodes in the Block.
 
+Table 1. IPs for Nodes:
+
++---------+---------------+----------------+---------------+
+|Node	    |IPMI IP        |Hypervisor IP   |CVM IP         |
++=========+===============+================+===============+
+|A        |10.21.xx.33	  |10.21.xx.25     |10.21.xx.29    |
++---------+---------------+----------------+---------------+
+|B        |10.21.xx.34	  |10.21.xx.26     |10.21.xx.30    |
++---------+---------------+----------------+---------------+
+|C        |10.21.xx.35	  |10.21.xx.27     |10.21.xx.31    |
++---------+---------------+----------------+---------------+
+|D        |10.21.xx.36	  |10.21.xx.28     |10.21.xx.32    |
++---------+---------------+----------------+---------------+
+
+* IPMI User:ADMIN, Password:ADMIN
+* In following steps, you may replace ‘xx’ with your assigned cluster ID
+
 DIY Your Environment
 ++++++++++++++++++++++++
 
