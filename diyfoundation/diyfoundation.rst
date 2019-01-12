@@ -70,7 +70,7 @@ Remaining in SSH client, access Node-D CVM and execute following commands
  ssh nutanix@10.21.xx.32
  cluster -s 10.21.xx.32 create       # Enter 'Y' when prompted to proceed
 
- ncli cluster edit-params new-name=POC0xx-D
+ ncli cluster edit-params new-name=POCxx-D
  ncli cluster add-to-name-servers servers=10.21.253.10
  ncli cluster set-external-ip-address external-ip-address=10.21.xx.40
 
