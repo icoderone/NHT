@@ -141,7 +141,7 @@ Fill out the following fields and click **Save**:
   - Select **Add**
 - Select **Add New NIC**
 
-  - **VLAN Name** - Primary
+  - **VLAN Name** - Rx-Automation-Network
   - Select **Add**
 
 .. image:: images/image003.png
