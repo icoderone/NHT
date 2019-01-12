@@ -73,7 +73,7 @@ Remaining in SSH client, access Node-D CVM and execute following commands
  ncli cluster edit-params new-name=POCxx-D
  ncli cluster add-to-name-servers servers=10.21.253.10
  ncli cluster set-external-ip-address external-ip-address=10.21.xx.40
- ncli user reset-password user-name='admin' password=techX2019!  # default password before reset is *Nutanix/4u*
+ ncli user reset-password user-name='admin' password=techX2019! # default password before reset is *Nutanix/4u*
 
 .. note::
 
