@@ -190,7 +190,7 @@ Select **eth0** and press **Return**.
 Replacing the octet(s) that correspond to your HPOC network, fill out the following fields, select **OK** and press **Return**:
 
 - **Use DHCP** - Press **Space** to de-select
-- **Static IP** - 10.21.xx.xx (Foundation VM IP)
+- **Static IP** - 10.21.xx.51 (Foundation VM IP)
 - **Netmask** - 255.255.255.128
 - **Gateway** - 10.21.xx.1
 
