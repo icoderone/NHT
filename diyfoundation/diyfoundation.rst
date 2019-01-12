@@ -17,6 +17,7 @@ In this exercise you will practice imaging a physical cluster with Foundation. I
 
 Table 1. IPs for Nodes:
 
+
 +---------+---------------+----------------+---------------+
 |Node	    |IPMI IP        |Hypervisor IP   |CVM IP         |
 +=========+===============+================+===============+
