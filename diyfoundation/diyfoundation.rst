@@ -46,7 +46,7 @@ A Hosted POC reservation provides a fully imaged cluster consisting of 4 nodes. 
 - Use Foundation to image Nodes A, B, and C and create a 3 node cluster
 
 
-Using an SSH client, connect to the **Node A CVM IP** (e.g. 10.21.xx.29) in your assigned block using the following credentials:
+Using an SSH client, connect to the **Node A CVM IP** <10.21.xx.29> in your assigned block using the following credentials:
 
 - **Username** - nutanix
 - **Password** - *techX2019!*
@@ -84,7 +84,7 @@ Remaining in SSH client, access Node-D CVM and execute following commands
 Install Foundation VM 
 ++++++++++++++++++++++
 
-Open \https://*<Node D cvm IP:10.21.xx.32>*:9440 in your browser and log in with the following credentials:
+Open \https://*10.21.xx.32*:9440 in your browser and log in with the following credentials:
 
 - **Username** - admin
 - **Password** - techX2019!
