@@ -35,10 +35,9 @@ Open a terminal and SSH to Node-D CVM, enter CVM credentials then execute follow
   
 .. code-block:: bash
 
-ssh nutanix@10.21.xx.32    # Enter 'Y' when prompted to proceed, password: techX2019!
+ ssh nutanix@10.21.xx.32    # Enter 'Y' when prompted to proceed, password: techX2019!
 
-acli image.create X-Ray container=Images image_type=kDiskImage source_url=http://download.nutanix.com/xray/3.3.0/xray.qcow2
-
+ acli image.create X-Ray container=Images image_type=kDiskImage source_url=http://download.nutanix.com/xray/3.3.0/xray.qcow2
 
 Configuring Target Cluster Networks
 +++++++++++++++++++++++++++++++++++
