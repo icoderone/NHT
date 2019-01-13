@@ -56,7 +56,7 @@ Open **Prism > VM > Table** and click **Network Config**.
 
 .. figure:: images/0.png
 
-Before creating the VM, we must first create a virtual network to assign to the Foundation VM. The network will use the Native VLAN assigned to the physical uplinks for all 4 nodes in the block.
+Before creating the VM, we must first create a virtual network to assign to the X-Ray VM. The network will use the Native VLAN assigned to the physical uplinks for all 4 nodes in the block.
 
 Click **Virtual Networks > Create Network**.
 
@@ -69,8 +69,6 @@ Click **Create Network**. Using the `Cluster Details`_ spreadsheet, fill out the
 
 - **Name** - Secondary
 - **VLAD ID** - *<Secondary VLAN ID>*
-
-.. figure:: images/1.png
 
 Creating X-Ray VM
 +++++++++++++++++
