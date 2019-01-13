@@ -44,7 +44,13 @@ Wait till you see X-Ray: Complete
 Configuring Target Cluster Networks
 +++++++++++++++++++++++++++++++++++
 
-Log into **Prism** on your 3-node **POC** cluster (10.21.xx.37).
+Open \https://*<POCxx-ABC Cluster IP>*:9440 (\https://10.21.xx.37:9440) in your browser and log in with the following credentials:
+
+- **Username** - admin
+- **Password** - Nutanix/4u
+- **Reset Password** - techX2019!
+
+Accept the EULA and Pulse prompts.
 
 Open **Prism > VM > Table** and click **Network Config**.
 
