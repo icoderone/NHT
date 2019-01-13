@@ -15,6 +15,15 @@ In this exercise you will use Prism to deploy Files, a native, distributed file 
 
 In following steps, you may replace xx with your assigned cluster ID
 
+Cluster Details
+................
+
+Using the spreadsheet below, locate your **Group Number** and corresponding details for your group's assigned cluster.
+
+.. raw:: html
+
+  <iframe src=https://docs.google.com/spreadsheets/d/1JAXYpRsNkzYUys_Sny4jRUtY8AeJymqMVEPwY_si3yo/edit#gid=847779028gid=0&amp; single=false&amp;widget=false&amp;chrome=false&amp;headers=false&amp;range=a1:m41 style="position: relative; height: 500px; width: 100%; border: none"></iframe>
+
 Networks preparation
 +++++++++++++++++++++
 
