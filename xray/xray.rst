@@ -104,7 +104,7 @@ Select your **XRay** VM and click **Power on**.
 
 .. note::
 
-  At the time of writing, X-Ray 3.1 is the latest available version. The URL for the latest X-Ray OVA & QCOW2 images can be downloaded from the `Nutanix Portal <https://portal.nutanix.com/#/page/static/supportTools>`_.
+  At the time of writing, X-Ray 3.3 is the latest available version. The URL for the latest X-Ray OVA & QCOW2 images can be downloaded from the `Nutanix Portal <https://portal.nutanix.com/#/page/static/supportTools>`_.
 
 Once the VM has started, click **Launch Console**.
 
