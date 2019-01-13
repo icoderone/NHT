@@ -73,7 +73,10 @@ Click **Create Network**. Using the `Cluster Details`_ spreadsheet, fill out the
 Creating X-Ray VM
 +++++++++++++++++
 
-Log into **Prism** on your **NHTLab** 1-node cluster (10.21.\ *XYZ*\ .32).
+Now we switch to Prism portal of single node cluster D , Open \https://*<POCxx-D Cluster IP>*:9440 (\https://10.21.xx.40:9440) in your browser and log in with the following credentials:
+
+- **Username** - admin
+- **Password** - techX2019!
 
 In **Prism > VM > Table** and click **+ Create VM**.
 
