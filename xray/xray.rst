@@ -130,7 +130,7 @@ Select **IPv4**. Using the `Cluster Details`_ spreadsheet, fill out the followin
 
 .. figure:: images/4.png
 
-Use the toggle switch to turn the **eth0** adapter off and back on to ensure the new IP is applied.
+Use the toggle switch to turn the **eth0** adapter **off** and back **on** to ensure the new IP is applied.
 
 .. raw:: html
 
@@ -180,6 +180,8 @@ Select **Targets** from the navigation bar and click **+ New Target**. Fill out 
 
 .. figure:: images/11.png
 
+.. figure:: images/110.png
+
 Select **Secondary** under **Network** and click **Next**.
 
 .. figure:: images/12.png
@@ -207,11 +209,9 @@ While X-Ray offers many testing options that evaluate critical Day 2+ scenarios,
 
 Select **Tests** from the navigation bar and select **Four Corners Microbenchmark**.
 
-.. figure:: images/17.png
-
 Review the test description, then select your **POC-Cluster** under **Targets** and click **Add to Queue**.
 
-.. figure:: images/18.png
+.. figure:: images/17.png
 
 .. note::
 
