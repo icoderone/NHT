@@ -169,7 +169,7 @@ Click **Done**.
 
 Select **Targets** from the navigation bar and click **+ New Target**. Fill out the following fields and click **Next**:
 
-- **Name** - POC-Cluster
+- **Name** - POCxx-ABC
 - **Manager Type** - Prism
 - **Power Management Type** - IPMI
 - **Username** - ADMIN
