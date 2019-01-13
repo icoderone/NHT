@@ -15,7 +15,8 @@ Overview
 Foundation is used to automate the installation of the hypervisor and Controller VM on one or more nodes. 
 In this exercise you will practice imaging a physical cluster with Foundation. In order to keep the lab self-contained, you will create a single node "cluster" on which you will deploy your Foundation VM. That Foundation instance will be used to image and create a cluster from the remaining 3 nodes in the Block.
 
-Table 1. IPs for Nodes:
+IPs for Nodes
+..............
 
 +---------+---------------+----------------+---------------+
 |Node	  |IPMI IP        |Hypervisor IP   |CVM IP         |
@@ -32,6 +33,14 @@ Table 1. IPs for Nodes:
 * IPMI User:ADMIN, Password:ADMIN
 * In following steps, you may replace xx with your assigned cluster ID
 
+Cluster Details
+................
+
+Using the spreadsheet below, locate your **Group Number** and corresponding details for your group's assigned cluster.
+
+.. raw:: html
+
+  <iframe src=https://docs.google.com/spreadsheets/d/1JAXYpRsNkzYUys_Sny4jRUtY8AeJymqMVEPwY_si3yo/edit#gid=847779028gid=0&amp; single=false&amp;widget=false&amp;chrome=false&amp;headers=false&amp;range=a1:m41 style="position: relative; height: 500px; width: 100%; border: none"></iframe>
 
 
 DIY Your Environment
@@ -211,8 +220,8 @@ Select **Save & Quit** and press **Return**.
 .. image:: images/image013.png
    :scale: 60%
    
-Running Foundation to create ABC cluster
-++++++++++++++++++++++++++++++++++++++++
+Foundation Node ABC cluster
+++++++++++++++++++++++++++++
 
 From within the Foundation VM console, launch **Nutanix Foundation** from the desktop.
 
