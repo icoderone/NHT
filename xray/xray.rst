@@ -15,6 +15,8 @@ X-Ray is an automated testing application for virtualized infrastructure solutio
 
 As X-Ray powers down hosts for tests that evaluate availability and data integrity, it is best practice to run the X-Ray VM outside of the target cluster. Additionally, the X-Ray VM itself creates a small amount of storage and CPU overhead that could potentially skew results.
 
+In this lab, we will deploy X-Ray VM on POCxx-D, and evalutate cluster POCxx-ABC we just created.
+
 For environments where DHCP is unavailable (or there isn't a sufficiently large pool of addresses available), X-Ray supports `Link-local <https://en.wikipedia.org/wiki/Link-local_address>`_ or "Zero Configuration" networking, where the VMs communicate via self-assigned IPv4 addresses. In order to work, all of the VMs (including the X-Ray VM) need to reside on the same Layer 2 network. To use Link-local networking, your X-Ray VM's first NIC (eth0) should be on a network capable of communicating with your cluster. A second NIC (eth1) is added on a network without DHCP.
 
 Cluster Details
@@ -25,22 +27,21 @@ Using the spreadsheet below, locate your **Group Number** and corresponding deta
 .. raw:: html
 
   <iframe src=https://docs.google.com/spreadsheets/d/1JAXYpRsNkzYUys_Sny4jRUtY8AeJymqMVEPwY_si3yo/edit#gid=847779028gid=0&amp; single=false&amp;widget=false&amp;chrome=false&amp;headers=false&amp;range=a1:m41 style="position: relative; height: 500px; width: 100%; border: none"></iframe>
+  
+Create the X-ray image
+++++++++++++++++++++++
+  
+  Open a terminal and SSH to Node-D CVM, type ‘ssh nutanix@10.21.xx.32’ , type ‘ yes’ and enter CVM credentials(techX2019!) then execute following commands
+  
+.. code-block:: bash
 
-References and Downloads
-........................
+acli image.create X-Ray container=Images image_type=kDiskImage source_url=http://download.nutanix.com/xray/3.3.0/xray.qcow2
 
-- `X-Ray Guide <https://portal.nutanix.com/#/page/docs/details?targetId=X-Ray-Guide-v31:X-Ray-Guide-v31>`_ - *X-Ray documentation*
-- `X-Ray Downloads <https://portal.nutanix.com/#/page/static/supportTools>`_ - *Portal location to download the latest X-Ray OVA and QCOW2 images.*
-- `X-Ray Vision as Nutanix Goes Open Source <https://www.nutanix.com/2018/05/09/x-ray-vision-as-nutanix-goes-open-source/>`_ - *Nutanix blog article explaining the impact of open sourcing X-Ray.*
-- `Nutanix GitLab Page <https://gitlab.com/nutanix>`_ - *Public facing repository of opensource X-Ray components including scenarios and Curie engine.*
-- `HCI Performance Testing Made Easy (Part 1) <https://www.n0derunner.com/2018/09/hci-performance-testing-made-easy-part-1/>`_ - *Gary Little blog/video series on using X-Ray.*
-- `HCI Performance Testing Made Easy (Part 2) <https://www.n0derunner.com/2018/09/hci-performance-testing-made-easy-part-2/>`_ - *Gary Little blog/video series on using X-Ray.*
-- `HCI Performance Testing Made Easy (Part 3) <https://www.n0derunner.com/2018/09/hci-performance-testing-made-easy-part-3/>`_ - *Gary Little blog/video series on using X-Ray.*
 
 Configuring Target Cluster Networks
 +++++++++++++++++++++++++++++++++++
 
-Log into **Prism** on your 3-node **POC** cluster (10.21.\ *XYZ*\ .37).
+Log into **Prism** on your 3-node **POC** cluster (10.21.xx.37).
 
 Open **Prism > VM > Table** and click **Network Config**.
 
@@ -52,7 +53,7 @@ Click **Virtual Networks > Create Network**.
 
 Fill out the following fields and click **Save**:
 
-- **Name** - Primary
+- **Name** - Rx-Automation-Network
 - **VLAD ID** - 0
 
 Click **Create Network**. Using the `Cluster Details`_ spreadsheet, fill out the following fields and click **Save**:
@@ -82,7 +83,7 @@ Fill out the following fields and click **Save**:
   - Select **Add**
 - Select **Add New NIC**
 
-  - **VLAN Name** - Primary
+  - **VLAN Name** - Rx-Automation-Network
   - Select **Add**
 - Select **+ Add New NIC**
 
