@@ -31,9 +31,11 @@ Using the spreadsheet below, locate your **Group Number** and corresponding deta
 Create the X-ray image
 ++++++++++++++++++++++
   
-Open a terminal and SSH to Node-D CVM, type ‘ssh nutanix@10.21.xx.32’ , type ‘ yes’ and enter CVM credentials(techX2019!) then execute following commands
+Open a terminal and SSH to Node-D CVM, enter CVM credentials then execute following commands
   
 .. code-block:: bash
+
+ssh nutanix@10.21.xx.32    # Enter 'Y' when prompted to proceed, password: techX2019!
 
 acli image.create X-Ray container=Images image_type=kDiskImage source_url=http://download.nutanix.com/xray/3.3.0/xray.qcow2
 
