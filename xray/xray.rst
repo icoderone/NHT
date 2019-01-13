@@ -139,7 +139,7 @@ Use the toggle switch to turn the **eth0** adapter off and back on to ensure the
 Configuring X-Ray
 +++++++++++++++++
 
-Open \https://<*XRAY-VM-IP*>/ in a browser. Enter a password for the local secret score, such as your Prism cluster password, and click **Enter**.
+Open \https://<*XRAY-VM-IP*>/ (https://10.21.xx.42:9440) in a browser. Enter a password for the local secret score, such as your Prism cluster password, and click **Enter**.
 
 .. figure:: images/7.png
 
