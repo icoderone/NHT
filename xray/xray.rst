@@ -39,7 +39,7 @@ Open a terminal and SSH to Node-D CVM, enter CVM credentials then execute follow
 
  acli image.create X-Ray container=Images image_type=kDiskImage source_url=http://download.nutanix.com/xray/3.3.0/xray.qcow2
  
- Wait till you see X-Ray: Complete
+Wait till you see X-Ray: Complete
 
 Configuring Target Cluster Networks
 +++++++++++++++++++++++++++++++++++
