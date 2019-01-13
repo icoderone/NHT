@@ -31,7 +31,7 @@ Using the spreadsheet below, locate your **Group Number** and corresponding deta
 Create the X-ray image
 ++++++++++++++++++++++
   
-  Open a terminal and SSH to Node-D CVM, type ‘ssh nutanix@10.21.xx.32’ , type ‘ yes’ and enter CVM credentials(techX2019!) then execute following commands
+Open a terminal and SSH to Node-D CVM, type ‘ssh nutanix@10.21.xx.32’ , type ‘ yes’ and enter CVM credentials(techX2019!) then execute following commands
   
 .. code-block:: bash
 
@@ -113,9 +113,9 @@ Select **Ethernet (eth0)** and click the **Gear Icon**.
 Select **IPv4**. Using the `Cluster Details`_ spreadsheet, fill out the following fields and click **Apply**:
 
 - **Addresses** - Manual
-- **Address** - 10.21.\ *XYZ*\ .42
+- **Address** - 10.21.xx.42
 - **Netmask** - 255.255.255.128
-- **Gateway** - 10.21.\ *XYZ*\ .1
+- **Gateway** - 10.21.xx.1
 - **DNS** - 10.21.253.10
 
 .. figure:: images/4.png
@@ -164,9 +164,9 @@ Select **Targets** from the navigation bar and click **+ New Target**. Fill out 
 - **Power Management Type** - IPMI
 - **Username** - ADMIN
 - **Password** - ADMIN
-- **Prism Address** - *<3-Node Cluster Virtual IP>*
+- **Prism Address** - *3-Node Cluster Virtual IP*<10.21.xx.37>
 - **Username** - admin
-- **Password** - techX2018!
+- **Password** - techX2019!
 
 .. figure:: images/11.png
 
