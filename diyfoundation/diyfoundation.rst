@@ -178,16 +178,19 @@ Once the VM has finished booting, click **nutanix**. Enter the default password 
 
 
 .. image:: images/image006.png
-  :scale: 60%
+  
+   
    
 Click the time on top right, change the time zone of the Foundation VM to local time zone with User: root, Password: nutanix/4u
 
 
 .. image:: images/image007.png  
   
+  
    
 .. image:: images/image008.png
- :scale: 60%
+ 
+ 
    
 Double-click **set_foundation_ip_address > Run in Terminal**.
 
@@ -213,7 +216,9 @@ Replacing the octet(s) that correspond to your HPOC network, fill out the follow
 - **Gateway** - 10.21.xx.1
 
 
+
 .. image:: images/image011.png
+
 
    
 .. note::
