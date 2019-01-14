@@ -22,7 +22,7 @@ For environments where DHCP is unavailable (or there isn't a sufficiently large 
 Cluster Details
 ................
 
-Using the spreadsheet below, locate your **Group Number** and corresponding details for your group's assigned cluster.
+Using the spreadsheet below, locate your **cluster ID** and corresponding details for your group's assigned cluster.
 
 .. raw:: html
 
