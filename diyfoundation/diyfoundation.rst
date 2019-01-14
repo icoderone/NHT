@@ -160,11 +160,14 @@ Fill out the following fields and click **Save**:
 
 .. image:: images/image003.png
  
+ 
 
 .. image:: images/image004.png
 
 
+
 .. image:: images/image005.png
+
 
    
 Config Foundation VM
