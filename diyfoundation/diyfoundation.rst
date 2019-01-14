@@ -225,30 +225,28 @@ Foundation Node ABC cluster
 
 By default, Foundation does not have any AOS or hypervisor images. You can download your desired AOS package from the `Nutanix Portal <https://portal.nutanix.com/#/page/releases/nosDetails>`_.
 
-  If downloading the AOS package within the Foundation VM, the .tar.gz package can also be moved to ~/foundation/nos rather than uploaded to Foundation through the web UI. 
+If downloading the AOS package within the Foundation VM, the .tar.gz package can also be moved to ~/foundation/nos rather than uploaded to Foundation through the web UI. 
   
-  To shorten the lab time, we use command line to access foundation VM and download NOS binary to designated folder in it.
+To shorten the lab time, we use command line to access foundation VM and download NOS binary to designated folder in it.
   
-  Open a terminal and ssh to foundation VM through foundation IP <10.21.xx.45>
+Open a terminal and ssh to foundation VM through foundation IP <10.21.xx.45>
   
-  .. code-block:: bash
+.. code-block:: bash
 
  ssh nutanix@10.21.xx.45      # provide default password of foundation VM : *nutanix/4u*
-
  cd foundation
  cd nos
  wget  https://s3.amazonaws.com/ntnx-portal/releases/euphrates-5.8.2-stable/nutanix_installer_package-release-euphrates-5.8.2-stable.tar.gz
  
-  .. image:: images/image100.png
+.. image:: images/image100.png
   
-  When you see above result, AOS 5.8.2 package has been downloaded to ~/foundation/nos folder.
-
+When you see above result, AOS 5.8.2 package has been downloaded to ~/foundation/nos folder.
 
 From within the Foundation VM console, launch **Nutanix Foundation** from the desktop.
 
 .. note::
 
-  Foundation can be accessed via any browser at \http://*<Foundation VM IP>*:8000/gui/index.html
+ Foundation can be accessed via any browser at \http://*<Foundation VM IP>*:8000/gui/index.html
 
 On the **Start** page, click **Next**.
 
@@ -266,20 +264,21 @@ Click **Click here** to manually specify the MAC address of your assigned node.
 
 .. note::
 
-  Foundation will automatically discover any hosts in the same IPv6 Link Local broadcast domain that is not already part of a cluster. 
+ Foundation will automatically discover any hosts in the same IPv6 Link Local broadcast domain that is not already part of a cluster. 
 
-  When transferring POC assets in the field, it's not uncommon to receive a cluster that wasn't properly destroyed at the conclusion of the previous POC. In that case, the nodes are already part of existing clusters and will not be discovered. 
+ When transferring POC assets in the field, it's not uncommon to receive a cluster that wasn't properly destroyed at the conclusion of the previous POC. In that case, the nodes are already part of existing clusters and will not be discovered. 
   
   In this lab, we choose manually specify the MAC address instead in order to practice as the real world.
 
 .. note::
  
-  There are at least 2 methods to know MAC address remotely.
+ There are at least 2 methods to know MAC address remotely.
 
-  Method.1 Identify MAC Address (BMC MAC address) of Nodes (A, B, C) by accessing IPMI IP for each node
+ Method.1 Identify MAC Address (BMC MAC address) of Nodes (A, B, C) by accessing IPMI IP for each node
   
-  Method.2 Identify MAC Address of Nodes (A, B, C) by login AHV host with User: root, Password: nutanix/4u for each node
+ Method.2 Identify MAC Address of Nodes (A, B, C) by login AHV host with User: root, Password: nutanix/4u for each node
   
+
 Access Node A IPMI through IP 10.21.xx.33 and ADMIN/ADMIN
 
 .. image:: images/image101.png
@@ -308,7 +307,6 @@ Selecting NODE, click **Range Autofill** in drop-down list of **Tools**, replaci
 
 .. image:: images/image105.png
 
-   
 Replacing the octet(s) that correspond to your HPOC network, fill out the following fields and select **Next**:
 
 Fill out the following fields and click **Next**:
