@@ -223,6 +223,27 @@ Select **Save & Quit** and press **Return**.
 Foundation Node ABC cluster
 ++++++++++++++++++++++++++++
 
+By default, Foundation does not have any AOS or hypervisor images. You can download your desired AOS package from the `Nutanix Portal <https://portal.nutanix.com/#/page/releases/nosDetails>`_.
+
+  If downloading the AOS package within the Foundation VM, the .tar.gz package can also be moved to ~/foundation/nos rather than uploaded to Foundation through the web UI. 
+  
+  To shorten the lab time, we use command line to access foundation VM and download NOS binary to designated folder in it.
+  
+  Open a terminal and ssh to foundation VM through foundation IP <10.21.xx.45>
+  
+  .. code-block:: bash
+
+ ssh nutanix@10.21.xx.45      # provide default password of foundation VM : *nutanix/4u*
+
+ cd foundation
+ cd nos
+ wget  https://s3.amazonaws.com/ntnx-portal/releases/euphrates-5.8.2-stable/nutanix_installer_package-release-euphrates-5.8.2-stable.tar.gz
+ 
+  .. image:: images/image100.png
+  
+  When you see above result, AOS 5.8.2 package has been downloaded to ~/foundation/nos folder.
+
+
 From within the Foundation VM console, launch **Nutanix Foundation** from the desktop.
 
 .. note::
@@ -247,27 +268,46 @@ Click **Click here** to manually specify the MAC address of your assigned node.
 
   Foundation will automatically discover any hosts in the same IPv6 Link Local broadcast domain that is not already part of a cluster. 
 
-
-  When transferring POC assets in the field, it's not uncommon to receive a cluster that wasn't properly destroyed at the conclusion of the previous POC. In this lab, the nodes are already part of existing clusters and will not be discovered.
+  When transferring POC assets in the field, it's not uncommon to receive a cluster that wasn't properly destroyed at the conclusion of the previous POC. In that case, the nodes are already part of existing clusters and will not be discovered. 
+  
+  In this lab, we choose manually specify the MAC address instead in order to practice as the real world.
 
 .. note::
-
-  If nodes could not be discovered automatically, you can manually specify the MAC address of your assigned node. There are at least 2 methods to know MAC address remotely.
-
+ 
+  There are at least 2 methods to know MAC address remotely.
 
   Method.1 Identify MAC Address (BMC MAC address) of Nodes (A, B, C) by accessing IPMI IP for each node
   
   Method.2 Identify MAC Address of Nodes (A, B, C) by login AHV host with User: root, Password: nutanix/4u for each node
+  
+Access Node A IPMI through IP 10.21.xx.33 and ADMIN/ADMIN
+
+.. image:: images/image101.png
+
+.. image:: images/image102.png
+
+Record your NODE A BMC MAC address ( in above example , it is **ac:1f:6b:1e:95:eb** )
+
+Doing the same with your other 2 nodes, and record all 3 BMC MAC address.
+
+In previous foundation page, clear all auto discovered nodes and click **add nodes manually**
+
+.. image:: images/image103.png
+
+Fill in block information, choose **I will provide the IPMIs' MACs** and click **Add**
+
+.. image:: images/image104.png
 
 Selecting NODE, click **Range Autofill** in drop-down list of **Tools**, replacing the octet(s) that correspond to your HPOC network, fill out the following fields and select **Next**:
 
+- **IPMI MAC** - the three your just recorded down
 - **IPMI IP** - 10.21.xx.33
 - **Hypervisor IP** - 10.21.xx.25
 - **CVM IP** - 10.21.xx.29
 - **Node A Hypervisor Hostname** – POCxx-1
 
-.. image:: images/image015.png
-   :scale: 60%
+.. image:: images/image105.png
+
    
 Replacing the octet(s) that correspond to your HPOC network, fill out the following fields and select **Next**:
 
@@ -295,24 +335,22 @@ Fill out the following fields and click **Next**:
 .. image:: images/image017.png
    :scale: 60%
    
-By default, Foundation does not have any AOS or hypervisor images. To upload AOS or hypervisor files, click **Manage AOS Files**.
+
+To upload AOS or hypervisor files, click **Manage AOS Files**.
 
 .. image:: images/image018.png
    :scale: 60%
    
-Download your desired AOS package from the `Nutanix Portal <https://portal.nutanix.com/#/page/releases/nosDetails>`_.
-
-Click **+ Add > Choose File**. Select your downloaded *nutanix_installer_package-release-\*.tar.gz* file and click **Upload**.
+   Click **+ Add > Choose File**. Select your downloaded *nutanix_installer_package-release-\*.tar.gz* file and click **Upload**.
 
 After the upload completes, click **Close**. Click **Next**.
 
-.. note::
+Since we have already upload our desired AOS through command line, just select it and click **Next**
 
-  If downloading the AOS package within the Foundation VM, the .tar.gz package can also be moved to ~/foundation/nos rather than uploaded to Foundation through the web UI. After moving the package into the proper directory, click **Manage AOS Files > Refresh**.
-
-.. image:: images/image019.png
+.. image:: images/image106.png
    :scale: 60%
    
+
 Fill out the following fields and click **Next**:
 
 - **Select a hypervisor installer** - AHV, AHV installer bundled inside the AOS installer
