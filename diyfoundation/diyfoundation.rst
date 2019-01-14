@@ -154,13 +154,13 @@ Fill out the following fields and click **Save**:
   - Select **Add**
 
 .. image:: images/image003.png
-   :scale: 100%
+ 
 
 .. image:: images/image004.png
-   :scale: 60%
+
 
 .. image:: images/image005.png
-   :scale: 30%
+
    
 Config Foundation VM
 +++++++++++++++++++++
@@ -172,15 +172,15 @@ Once the VM has started, click **Launch Console**.
 Once the VM has finished booting, click **nutanix**. Enter the default password *nutanix/4u* click **Log In**.
 
 .. image:: images/image006.png
-   :scale: 60%
+
    
 Click the time on top right, change the time zone of the Foundation VM to local time zone with User: root, Password: nutanix/4u
 
 .. image:: images/image007.png
-   :scale: 60%
+  
    
 .. image:: images/image008.png
-   :scale: 60%
+
    
 Double-click **set_foundation_ip_address > Run in Terminal**.
 
