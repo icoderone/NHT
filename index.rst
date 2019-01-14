@@ -29,7 +29,7 @@ Welcome to Nutanix New Hire Training! Carefully review the **Overview** section 
 Cluster Details
 +++++++++++++++
 
-Using the spreadsheet below, locate your **Group Number** and corresponding details for your group's assigned cluster.
+Using the spreadsheet below, locate your **Cluster ID** and corresponding details for your group's assigned cluster.
 
 .. raw:: html
 
