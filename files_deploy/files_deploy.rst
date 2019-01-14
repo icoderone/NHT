@@ -219,7 +219,7 @@ Review Summary tab and click **create**
 .. image:: images/image021.png
 
 
-Login to https://citrixready.nutanix.com using your supplied credentials
+Login to https://citrixready.nutanix.com using your supplied credentials(see *Cluster detail* )
 Select "Customers, Partners & Bootcamps" to access your virtual desktop, open file browser and type ‘\\10.21.xx.100’ (or any other IP of FSVM)
 Login by administrator@poclab.local credential 
 
