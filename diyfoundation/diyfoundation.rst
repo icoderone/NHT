@@ -288,7 +288,7 @@ Click **Click here** to manually specify the MAC address of your assigned node.
 
  When transferring POC assets in the field, it's not uncommon to receive a cluster that wasn't properly destroyed at the conclusion of the previous POC. In that case, the nodes are already part of existing clusters and will not be discovered. 
   
-  In this lab, we choose manually specify the MAC address instead in order to practice as the real world.
+ In this lab, we choose manually specify the MAC address instead in order to practice as the real world.
 
 .. note::
  
@@ -394,19 +394,25 @@ Fill out the following fields and click **Next**:
 Select **Fill with Nutanix defaults** from the **Tools** dropdown menu to populate the credentials used to access IPMI on each node.
 
 
+
 .. image:: images/image021.png
- 
+
+
  
 Click **Start > Proceed** and continue to monitor Foundation progress through the Foundation web console. Click the **Log** link to view the realtime log output from your node.
+
 
 
 .. image:: images/image022.png
   
   
+  
 When all CVMs are ready, Foundation initiates the cluster creation process.
 
 
+
 .. image:: images/image023.png
+
 
 
 Open \https://*<Cluster Virtual IP>*:9440 in your browser and log in with the following credentials:
@@ -416,5 +422,7 @@ Open \https://*<Cluster Virtual IP>*:9440 in your browser and log in with the fo
 - **Change the Password** - techX2019!
 
 
+
 .. image:: images/image024.png
+ 
  
