@@ -104,8 +104,10 @@ In **Prism > Storage > Table > Storage Pool**, select default storage pool and c
 
 Click **+ Storage Container** to create a new container named *Images*
 
+
 .. image:: images/image001.png
- 
+
+
 Go to configuration page and navigate to **Image Configuration**, click **+Upload Image**
 Fill out the following fields and click **Save**:
 
