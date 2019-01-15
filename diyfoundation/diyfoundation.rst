@@ -190,6 +190,7 @@ Click the time on top right, change the time zone of the Foundation VM to local 
 .. image:: images/image007.png  
   
   
+  
    
 .. image:: images/image008.png
  
