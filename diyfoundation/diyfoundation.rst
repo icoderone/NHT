@@ -317,7 +317,7 @@ Access Node A IPMI through IP 10.21.xx.33 and ADMIN/ADMIN
 
 Record your NODE A BMC MAC address ( in above example , it is **ac:1f:6b:1e:95:eb** )
 
-Doing the same with your other 2 nodes, and record all 3 BMC MAC address.
+Doing the same with your other 2 nodes, and record all 3 BMC MAC addresses.
 
 In previous foundation page, clear all auto discovered nodes and click **add nodes manually**
 
