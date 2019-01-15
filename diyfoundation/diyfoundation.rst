@@ -221,7 +221,10 @@ Replacing the octet(s) that correspond to your HPOC network, fill out the follow
 
 
 
-.. image:: images/image011.png
+
+.. image:: images/image011.png  
+  :scale: 60%
+
 
 
    
